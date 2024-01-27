@@ -1,13 +1,105 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.color-body {
+  background-color: white;
+  height: 100vh;
+}
+.nav-style {
+  height: 90px;
+  width: 1400px;
+  background-color: #323030;
+}
+.logo {
+  height: 72px;
+  width: 70px;
+}
+.search {
+  position: relative;
+}
+.search input {
+  height: 40px;
+  text-indent: 25px;
+  border-radius: 20px;
+}
+.search input:focus {
+  box-shadow: none;
+  transform: scale(1.01);
+}
+.search .fa-search {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+.card {
+  position: relative;
+  transition: all 0.5s ease-in;
+}
+.card_img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.card_overley {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: 0.5s ease;
+  background-color: #292929;
+}
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.card:hover .card_overley {
+  opacity: 0.85;
+}
+.overlay_text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.img-movie {
+  display: grid;
+  height: 400px;
+  width: auto;
+  border-radius: 5px;
+  position: relative;
+  padding: 0;
+}
+.card-details {
+  
+  
+}
+.card-text-details {
+  font-family: "Almarai", sans-serif;
+  text-align: center;
+  align-items: center;
+  
+  
+}
+.card-text-title{
+  font-family:"Almarai", sans-serif ;
+  font-size: 30px;
+  
+  
+}
+.card-text-story{
+  text-align: center;
+}
+.card-story{
+  text-align: end;
 }
